@@ -1,0 +1,59 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 2rem 0;
+}
+
+.intro {
+    color: var(--primary-color);
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4px;
+}
+
+.name {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    color: var(--text-secondary);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.description {
+    color: var(--text-secondary);
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3.5rem;
+}
+
+.ctaButton {
+    padding: 1rem 1.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: inline-block;
+}
+
+.ctaButton:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}

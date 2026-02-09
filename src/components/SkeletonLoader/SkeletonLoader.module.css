@@ -1,0 +1,61 @@
+.skeleton {
+    background: linear-gradient(90deg,
+            var(--card-bg) 0%,
+            rgba(100, 255, 218, 0.1) 50%,
+            var(--card-bg) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.heading {
+    height: 40px;
+    width: 300px;
+    margin-bottom: 3rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.card {
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+.line {
+    height: 20px;
+    margin-bottom: 1rem;
+}
+
+.lineShort {
+    height: 20px;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.gridItem {
+    height: 150px;
+}

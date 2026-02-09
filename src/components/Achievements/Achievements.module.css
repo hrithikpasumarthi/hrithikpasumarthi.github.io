@@ -1,0 +1,171 @@
+.sectionContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.type {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.yearWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.year {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.infoIconWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.infoIcon {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.infoIcon:hover {
+    color: var(--text-primary);
+    transform: scale(1.1);
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: var(--card-bg);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.tooltipTop {
+    bottom: calc(100% + 15px);
+    right: -10px;
+}
+
+.tooltipBottom {
+    top: calc(100% + 15px);
+    right: -10px;
+}
+
+.tooltipTitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    padding-bottom: 0.25rem;
+}
+
+.tooltipContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Custom Scrollbar for Tooltip */
+.tooltipContent::-webkit-scrollbar {
+    width: 4px;
+}
+
+.tooltipContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tooltipContent::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.quarterItem {
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.tooltipArrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.tooltipTop .tooltipArrow {
+    top: 100%;
+    right: 15px;
+    border-top: 6px solid var(--primary-color);
+}
+
+.tooltipBottom .tooltipArrow {
+    bottom: 100%;
+    right: 15px;
+    border-bottom: 6px solid var(--primary-color);
+}
+
+.title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.place {
+    color: var(--text-primary);
+    font-weight: bold;
+}

@@ -1,0 +1,233 @@
+.aboutSection {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 2rem 1.5rem;
+    }
+}
+
+.intro {
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    max-width: 800px;
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.highlightText {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Two Column Grid */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+.columnTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.columnTitleIcon {
+    color: var(--primary-color);
+    font-size: 0.8em;
+}
+
+/* Experience Card (Single Item) */
+.experienceCard {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+.experienceCard:hover {
+    transform: translateY(-5px);
+}
+
+.jobHeader {
+    margin-bottom: 1rem;
+}
+
+.role {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--heading-text);
+    margin-bottom: 0.25rem;
+}
+
+.company {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.companyRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.duration {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.dutyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dutyItem {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.dutyItem::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Accordion Styles */
+.accordionItem {
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.accordionHeader {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.accordionHeader:hover {
+    background-color: rgba(100, 255, 218, 0.05);
+}
+
+.accordionHeaderActive {
+    border-left: 3px solid var(--primary-color);
+    background-color: rgba(100, 255, 218, 0.05);
+}
+
+.companyName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--heading-text);
+}
+
+.companyYear {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.accordionContent {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Education Styles */
+.educationCard {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: transform 0.2s ease;
+}
+
+.educationCard:hover {
+    transform: translateY(-5px);
+}
+
+.eduIcon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.eduContent {
+    flex: 1;
+}
+
+.degree {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--heading-text);
+    margin-bottom: 0.25rem;
+}
+
+.institution {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.eduFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.eduYear {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.cgpa {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}

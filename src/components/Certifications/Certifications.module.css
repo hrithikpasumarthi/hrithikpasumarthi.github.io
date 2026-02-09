@@ -1,0 +1,35 @@
+.sectionContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card:hover {
+    transform: translateX(5px);
+}
+
+.icon {
+    color: var(--primary-color);
+    min-width: 20px;
+}
+
+.name {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}

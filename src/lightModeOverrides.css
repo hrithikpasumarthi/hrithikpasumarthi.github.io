@@ -1,0 +1,6 @@
+/* Light Mode Specific Overrides */
+/* All overrides have been moved to theme variables in index.css */
+
+[data-theme='light'] .readmeContent h1 {
+    color: #1a202c !important;
+}
