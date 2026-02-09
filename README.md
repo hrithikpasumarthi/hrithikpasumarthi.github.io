@@ -1,6 +1,6 @@
 # Portfolio
 
-A premium, highly-interactive portfolio website built with **React**, **Vite**, and **Framer Motion**. This project features a modern, theme-switchable UI with a specialized "VS Code" inspired projects section.
+A premium, highly-interactive portfolio website built with **React**, **Vite**, and **Framer Motion**. This project features a modern, theme-switchable UI with a specialized "VS Code" inspired projects section. 
 
 ## 🚀 Key Features
 
