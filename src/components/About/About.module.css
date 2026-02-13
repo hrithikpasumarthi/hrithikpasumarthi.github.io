@@ -231,3 +231,7 @@
     color: var(--primary-color);
     font-weight: 600;
 }
+
+.aboutHeading {
+    margin-top: 25px;
+}

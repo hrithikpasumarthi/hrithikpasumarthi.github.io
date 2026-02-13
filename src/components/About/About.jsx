@@ -15,7 +15,7 @@ const About = () => {
     return (
         <section id="about" className={styles.aboutSection}>
             <motion.h2
-                className="section-heading"
+                className={`section-heading ${styles.aboutHeading}`}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
